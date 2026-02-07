@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Hero = () => {
+const Projects = () => {
   return (
    <section></section>
   )
 }
 
-export default Hero
+export default Projects
