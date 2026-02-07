@@ -1,40 +1,66 @@
-import React from 'react'
-import Button from '../components/Button'
-const navLinks=[
-    {href:"#about",label:"about" },
-    {href:"#projects",label:"project" },
-    {href:"#testimonials",label:"testimonials" },
-    {href:"#experience",label:"experience" },
-]
-const NavBar = () => {
-  return (
-    <header className="fixed top-0 left-0 bg-transparent py-5">
-        <nav className="container mx-auto px-6 flex items-center justify-between">
-            <a href="#" className="text-xl font-bold tracking-light">
-                PM<span className="text-primary">.</span>
-            </a>
-            {/*nav setup*/}
-            <div className="flex items-center gap-1">
-                <div className="glass  rounded-full px-2 py-1 flex items-center gap-1">
-                   {navLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                className="px-4 py-2 text-muted-foreground hover:text-foreground rounded-full hover:bg-surface transition"
-              >
-                {link.label}
-              </a>
-            ))}
-                </div>
-            </div>
-            <div>
-                <Button>
-                    Contact Me
-                </Button>
-            </div>
-        </nav>
-    </header>
-  )
-}
+import React from "react";
+import { useState } from "react";
+import Button from "../components/Button";
 
-export default NavBar
+const navLinks = [
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#testimonials", label: "Testimonials" },
+  { href: "#experience", label: "Experience" },
+];
+
+const NavBar = () => {
+    const [isMobileOpen,setIsMobileOpen] = useState(false);
+  return (
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/30">
+      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        
+        <a href="#" className="text-xl font-bold tracking-wide text-white">
+          PM<span className="text-primary">.</span>
+        </a>
+        <div className="hidden md:flex items-center gap-6 glass rounded-full px-3 py-2">
+          {navLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              className="px-4 py-2 text-sm text-muted-foreground hover:text-white rounded-full hover:bg-white/10 transition-all duration-200"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+
+        {/* Button */}
+        <div className="hidden md:block">
+          <Button size="sm">Contact Me</Button>
+        </div>
+        <div className="md:hidden p-2 text-foreground cursor-pointer">
+          <button onClick={()=>setIsMobileOpen((prev)=>!prev)}>
+            {isMobileOpen?<p>X</p>:<p>menu</p>}
+          
+            </button>
+        </div>
+      </nav>
+      {/* Mobile Menu (hidden by default) */}
+      {isMobileOpen&&(
+        <div className="md:hidden glass-strong animate-fade-in">
+        <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+             {navLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              className="text-lg text-muted-foreground hover:text-foreground py-2"
+            >
+              {link.label}
+            </a>
+          ))}
+          <Button>Contact Me</Button>
+        </div>
+        
+      </div>
+        )}
+    </header>
+  );
+};
+
+export default NavBar;

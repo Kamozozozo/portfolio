@@ -1,5 +1,5 @@
 import { useState } from 'react'
-//import {Hero} from "@/sections/hero";
+import Hero from './sections/Hero'
 import NavBar from './layout/NavBar'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="min-h-screen overflow-hidden flex items-center justify-center">
       <NavBar/>
       <main>
-        
+        <Hero/>
       </main>
     </div>
   )
