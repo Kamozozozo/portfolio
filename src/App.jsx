@@ -6,7 +6,10 @@ function App() {
 
   return (
     <div className="min-h-screen overflow-hidden flex items-center justify-center">
+      
+      <main>
 
+      </main>
     </div>
   )
 }
