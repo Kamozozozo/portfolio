@@ -54,6 +54,26 @@
       filter:blur(0)
     }
   }
+@layer utilities{
+  @keyframes slow-drift {
+    0% {
+      transform: translateY(0px);
+    }
+   100%{
+      transform: translateY(0,0);
+
+   };
+   25% {
+      transform: translateY(20px,-30px);
+    }
+    50% {
+      transform: translateY(-15px,-20px);
+    }
+    75% {
+      transform: translateY(30px,10px);
+    }
+  }
+} 
   .animate-fade-in{
     animation:fade-in 0.9 ease-out both;
   }
