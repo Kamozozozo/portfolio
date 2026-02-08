@@ -28,12 +28,27 @@ const Hero = () => {
         ))}
       </div>
       {/* Content */}
-      <div className="relative z-10 text-center px-4">
+      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10 text-center">
         
-        <div>
+        <div className="grid lg:grid-cols-2 gap-12 ">
           {/*left and right floating elements*/}
-          <div>
+          <div className="space-t-8">
+            <div className="animate-fade-in">
+              <span className="inline-text items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+              <span className="w-2 h-2 bg-primary rounded-full animate-pulse">
+                Software Engineer + React and Spring boot specialist
+              </span>
+              </span>
+            </div>
             <div>
+              <h1>
+                crafting <span className="text-primary glow-text"> digital</span>
+             
+              <br/>
+              experience with
+              <br/>
+              <span className="font-serif italic font-normal text-white"> digital</span>
+               </h1>
               
             </div>
           </div>
