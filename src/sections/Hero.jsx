@@ -35,7 +35,7 @@ const Hero = () => {
         
         <div className="grid lg:grid-cols-2 gap-12 ">
           {/*left and right floating elements*/}
-          <div className="space-t-8">
+          <div className="space-y-8">
             <div className="animate-fade-in">
               <span className="inline-text items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
               <span className="w-2 h-2  rounded-full animate-pulse">
@@ -70,7 +70,7 @@ const Hero = () => {
           {/*image*/}
           <div className="relative animate-fade-in animation-delay-300">
           <div className="relative max-w-md mx-auto">
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl  animate-pulse">
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10   animate-pulse">
             <div className="relative glass rounded-3xl p-2 glow-border">
             <img src={Him} alt="Hero background" className="w-full aspect-[4/5]  object-cover rounded-2xl shadow-lg" />
             <div className="absolute -bottom-4  -right-4 glass rounded-xl px-4 py-3 animate-float animate-pulse">
