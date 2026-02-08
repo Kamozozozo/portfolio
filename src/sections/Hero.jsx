@@ -76,7 +76,7 @@ const Hero = () => {
             <div className="absolute -bottom-4  -right-4 glass rounded-xl px-4 py-3 animate-float animate-pulse">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 bg-primary rounded-full animate-pulse"/>
-                <span className="tet-sm">Available to work</span>
+                <span className="tet-sm font-medium">Available to work</span>
               </div>
             </div>
             </div>
