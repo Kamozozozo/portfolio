@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Button from "../components/Button";
 
@@ -11,8 +11,19 @@ const navLinks = [
 
 const NavBar = () => {
     const [isMobileOpen,setIsMobileOpen] = useState(false);
+    const [isScrolled,setIsScrolled] = useState(false);
+    useEffect(()=>{
+      const handleScroll = ()=>{
+        setIsScrolled(window.scrollY>50)
+        
+      }
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    },[])
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/30">
+    <header className={`fixed top-0 left-0 w-full z-50 backdrop-blur-md ${isScrolled ? "glass-strong py-3" : "bg-transparent py-3"}`}>
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         
         <a href="#" className="text-xl font-bold tracking-wide text-white">
