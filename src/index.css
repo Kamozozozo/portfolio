@@ -16,6 +16,7 @@
   --color-surface: #1a2329;
 
 }
+
 @layer base {
   html{
   scroll-behavior: smooth;
@@ -121,6 +122,17 @@
   }
   .animate-float{
     animation: float 3s ease-in-out infinite;
+  }
+  @keyframes marque{
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-marquee{
+    animation: marque 30s linear infinite;
   }
   @keyframes animated-border {
     0% {

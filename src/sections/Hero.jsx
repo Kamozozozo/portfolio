@@ -3,10 +3,22 @@ import heroImage from "../assets/hero-bg.jpg";
 import Button from "../components/Button";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import Him from "../assets/Him.png";
+const skills=[
+  "React",
+  "JavaScript",
+  "Spring Boot",
+  "HTML/CSS",
+  "docker",
+  "git",
+  "tailwindcss",
+  "mongodb",
+  "mysql",
+  "figma",
 
+]
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen w-screen overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={heroImage}
@@ -70,7 +82,7 @@ const Hero = () => {
           {/*image*/}
           <div className="relative animate-fade-in animation-delay-300">
           <div className="relative max-w-md mx-auto">
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10   animate-pulse">
+            <div className="rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10   animate-pulse">
             <div className="relative glass rounded-3xl p-2 glow-border">
             <img src={Him} alt="Hero background" className="w-full aspect-[4/5]  object-cover rounded-2xl shadow-lg" />
             <div className="absolute -bottom-4  -right-4 glass rounded-xl px-4 py-3 animate-float animate-pulse">
@@ -80,9 +92,30 @@ const Hero = () => {
               </div>
             </div>
             </div>
+            {/*experience floating pointer*/}
+            <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+              <div className="text-2xl font-bold text-primary">
+                0
+              </div>
+              <div className="text-xs text-muted-foreground">Years of experience</div>
+            </div>
           </div>
           </div> 
         </div>
+        </div>
+        {/* Floating skill tags */}
+        <div className="mt-20 animate-fade-in animation-delay-600">
+          <p className="text-sm text-muted-foreground mb-6 text-center font-semibold">technologies i work with:</p>
+
+          <div className="relative overflow-hidden">
+            <div className="flex animate-marquee">
+              {[...skills,...skills].map((skill,index)=>(
+                <div key={index} className=" flex-shrink-0 px-8 py-4">
+                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">{skill}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
