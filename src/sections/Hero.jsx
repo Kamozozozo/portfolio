@@ -3,6 +3,7 @@ import heroImage from "../assets/hero-bg.jpg";
 import Button from "../components/Button";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import Him from "../assets/Him.png";
+
 const skills=[
   "React",
   "JavaScript",
@@ -105,7 +106,7 @@ const Hero = () => {
         </div>
         {/* Floating skill tags */}
         <div className="mt-20 animate-fade-in animation-delay-600">
-          <p className="text-sm text-muted-foreground mb-6 text-center font-semibold">technologies i work with:</p>
+          <p className="text-sm text-muted-foreground text-primary glow-text mb-6 text-center font-semibold">technologies i work with:</p>
 
           <div className="relative overflow-hidden">
             <div className="flex animate-marquee">
