@@ -31,8 +31,6 @@ const About = () => {
                 I am a recent motivated graduate in Honors Computer Science with a strong foundation in software development, full-stack, web applications, backend systems, and strong academic background in computer science. I developed a deep curiosity for learning and mastering new technologies. I view my career as a journey of continuous contribution as I am seeking a position to apply my skills with the aim of contributing and building high-quality applications that solve real-world problems while meeting the client’s requirements, and growing as part of a dynamic and collaborative team.
               </p>
             </div>
-
-          
             <div className="glass rounded-2xl p-5 glow-border animate-fade-in animation-delay-300 w-full lg:w-1/2">
               <p className="text-lg font-medium italic text-foreground">
                 "My mission is to create impactful and innovative software solutions that enhance user experiences and drive technological advancement. I am passionate about crafting seamless user interfaces and efficient backend systems that solve real-world problems. I am committed to continuous learning and staying up-to-date with industry trends to ensure that my work remains relevant and impactful in the ever-evolving tech landscape."

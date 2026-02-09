@@ -5,8 +5,8 @@ import Button from "../components/Button";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#experience", label: "Experience" },
+  { href: "#education", label: "Education" },
+  //{ href: "#experience", label: "Experience" },
 ];
 
 const NavBar = () => {
