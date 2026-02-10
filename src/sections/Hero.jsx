@@ -66,7 +66,7 @@ const Hero = () => {
               <span className="font-serif italic font-normal text-white"> precision</span>
                </h1>
               <p className="text-lg text-muted-foreground  max-w-lg animate-fade-in animation-delay-200">
-                Hi, My Name is Kamogelo Matabane I'm a passionate software engineer specializing in React and Spring Boot. I create seamless digital experiences that blend creativity with functionality.if you want to know more about me, feel free to explore my portfolio and get in touch!
+                Hi, My Name is Kamogelo Matabane ,a recent graduate from the University of Unizulu, I'm a passionate software engineer specializing in React and Spring Boot. I create seamless digital experiences that blend creativity with functionality.if you want to know more about me, feel free to explore my portfolio and get in touch!
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-4 mt-6">

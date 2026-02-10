@@ -43,7 +43,9 @@ const NavBar = () => {
 
         {/* Button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <Button  size="sm"> <a href="#contact" className="w-full h-full block">
+    Contact Me
+  </a></Button>
         </div>
         <div className="md:hidden p-2 text-foreground cursor-pointer">
           <button onClick={()=>setIsMobileOpen((prev)=>!prev)}>
@@ -66,7 +68,9 @@ const NavBar = () => {
               {link.label}
             </a>
           ))}
-          <Button  href="#contact" onClick={()=>setIsMobileOpen(false)} >Contact Me</Button>
+          <Button  onClick={()=>setIsMobileOpen(false)} > <a href="#contact" className="w-full h-full block">
+    Contact Me
+  </a></Button>
         </div>
         
       </div>
