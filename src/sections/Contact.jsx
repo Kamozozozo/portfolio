@@ -78,6 +78,7 @@ const Contact = () => {
               >
                 linkedin.com/in/kamogelo-matabane-724953338
               </a>
+            </div>
           </div>
         </div>
 
