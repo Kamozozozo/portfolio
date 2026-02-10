@@ -27,7 +27,7 @@ const NavBar = () => {
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         
         <a href="#" className="text-xl font-bold tracking-wide text-white">
-          PM<span className="text-primary">.</span>
+          KB<span className="text-primary">.</span>
         </a>
         <div className="hidden md:flex items-center gap-6 glass rounded-full px-3 py-2">
           {navLinks.map((link, index) => (
