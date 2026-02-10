@@ -59,17 +59,17 @@ const Projects = () => {
         Projects
       </h2>
 
-      <div className="flex  gap-6 justify-center animate-marquee">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex-1 min-w-[300px] max-w-[350px] bg-background shadow-md rounded-xl p-6 hover:scale-105 transition flex flex-col"
+            className="bg-background shadow-md rounded-xl p-6 hover:scale-105 transition"
           >
             <h3 className="text-lg font-semibold text-primary">
               {project.title}
             </h3>
 
-            <p className="text-muted-foreground mt-2 text-justify flex-1">
+            <p className="text-muted-foreground mt-2 text-justify">
               {project.description}
             </p>
 

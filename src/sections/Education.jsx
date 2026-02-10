@@ -44,7 +44,7 @@ const Education = () => {
             </div>
 
             {/* BSc */}
-            <div className="bg-background shadow-md rounded-xl px-6  md:py-20 xl:py-20 py-25">
+            <div className="bg-background shadow-md rounded-xl px-6  md:py-20 xl:py-20 sm:py-10 py-6">
               <h3 className="text-lg font-semibold text-primary">
                 Bachelor of Science (BSc) in Computer Science
               </h3>
