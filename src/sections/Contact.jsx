@@ -68,6 +68,16 @@ const Contact = () => {
                 github.com/Kamozozozo
               </a>
             </div>
+            <div className="hover:text-accent transition">
+              <strong>LinkedIn:</strong>{" "}
+              <a
+                href="https://linkedin.com/in/kamogelo-matabane-724953338"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                linkedin.com/in/kamogelo-matabane-724953338
+              </a>
           </div>
         </div>
 
