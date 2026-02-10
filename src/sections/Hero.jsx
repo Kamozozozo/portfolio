@@ -50,10 +50,15 @@ const Hero = () => {
           {/*left and right floating elements*/}
           <div className="space-y-8">
             <div className="animate-fade-in">
-              <span className="inline-text items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-              <span className="w-2 h-2  rounded-full animate-pulse">
-                Software Engineer + React and Spring boot specialist
+              <span className=" items-center gap-4 px-4 py-2 rounded-full glass text-sm text-primary">
+                <span className="w-2 h-2  rounded-full animate-pulse font-bold">
+                Graduate Software Engineer
               </span>
+              </span>
+              <br/>
+              <br/>
+               <span className="w-2 h-2  rounded-full animate-pulse p-2 rounded-full glass text-sm text-primary">
+                React + Spring boot specialist
               </span>
             </div>
             <div className="space-y-4">
