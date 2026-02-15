@@ -55,7 +55,7 @@ const Contact = () => {
               <strong>Email:</strong> kamozozobaete@gmail.com
             </div>
             <div className="hover:text-accent transition">
-              <strong>Phone:</strong> +27 726 266 459
+              <strong>Phone:</strong> +27 736 266 459
             </div>
             <div className="hover:text-accent transition">
               <strong>GitHub:</strong>{" "}
